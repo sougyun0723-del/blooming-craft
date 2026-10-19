@@ -7,7 +7,7 @@
 - 웹앱: https://blooming-craft.netlify.app/
 - GitHub: https://github.com/sougyun0723-del/blooming-craft
 
-GitHub 저장소는 비공개이므로 접근 권한이 있는 사용자만 볼 수 있습니다. 웹앱의 외부 접속 가능 여부는 Netlify의 접근 설정에 따릅니다.
+GitHub 저장소는 공개되어 누구나 코드와 사용 안내를 확인할 수 있습니. 웹앱의 외부 접속 가능 여부는 Netlify의 접근 설정에 따릅니다.
 
 ## 사용 대상과 목적
 
