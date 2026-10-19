@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24..48,400..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f5;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#ffdcc4",
+          "inverse-surface": "#34302c",
+          "on-secondary": "#ffffff",
+          "surface-bright": "#fff8f5",
+          "surface-container": "#f5ece7",
+          "on-error-container": "#93000a",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#fbf2ed",
+          "secondary-fixed-dim": "#ffb780",
+          "on-surface-variant": "#57423b",
+          "secondary": "#8e4e14",
+          "background": "#fff8f5",
+          "surface-variant": "#e9e1dc",
+          "on-primary-container": "#fffbff",
+          "tertiary-fixed-dim": "#85d6bb",
+          "on-tertiary": "#ffffff",
+          "primary": "#9f3c16",
+          "on-background": "#1e1b18",
+          "primary-container": "#bf542c",
+          "surface-tint": "#a23e18",
+          "on-primary-fixed": "#390c00",
+          "on-tertiary-fixed": "#002118",
+          "outline-variant": "#dec0b7",
+          "inverse-on-surface": "#f8efea",
+          "on-tertiary-fixed-variant": "#00513f",
+          "on-secondary-container": "#783d01",
+          "surface-container-high": "#efe6e2",
+          "primary-fixed-dim": "#ffb59c",
+          "tertiary-container": "#2e826a",
+          "on-surface": "#1e1b18",
+          "surface": "#fff8f5",
+          "surface-dim": "#e1d8d4",
+          "on-tertiary-container": "#f5fff9",
+          "outline": "#8a726a",
+          "on-secondary-fixed": "#2f1400",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#a1f3d6",
+          "inverse-primary": "#ffb59c",
+          "surface-container-highest": "#e9e1dc",
+          "tertiary": "#056952",
+          "secondary-container": "#ffab69",
+          "primary-fixed": "#ffdbcf",
+          "on-primary": "#ffffff",
+          "on-primary-fixed-variant": "#822801",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed-variant": "#6f3800",
+          "error": "#ba1a1a"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "1.25rem",
+          "gutter": "1rem",
+          "margin-desktop": "2.5rem",
+          "space-xl": "2.5rem",
+          "space-sm": "0.75rem",
+          "space-md": "1.25rem",
+          "gutter-desktop": "1.5rem",
+          "space-lg": "1.75rem",
+          "space-xs": "0.5rem"
+        },
+        "fontFamily": {
+          "body-xl": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-xl-mobile": ["Plus Jakarta Sans"],
+          "headline-md-mobile": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "label-xl": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "body-xl": ["20px", { "lineHeight": "36px", "fontWeight": "600" }],
+          "body-md": ["16px", { "lineHeight": "28px", "fontWeight": "500" }],
+          "headline-lg": ["26px", { "lineHeight": "42px", "fontWeight": "700" }],
+          "headline-xl-mobile": ["26px", { "lineHeight": "38px", "fontWeight": "800" }],
+          "headline-md-mobile": ["20px", { "lineHeight": "32px", "fontWeight": "700" }],
+          "label-lg": ["18px", { "lineHeight": "26px", "fontWeight": "700" }],
+          "label-xl": ["20px", { "lineHeight": "28px", "fontWeight": "700" }],
+          "body-lg": ["18px", { "lineHeight": "32px", "fontWeight": "500" }],
+          "headline-lg-mobile": ["22px", { "lineHeight": "34px", "fontWeight": "700" }],
+          "label-md": ["16px", { "lineHeight": "24px", "fontWeight": "700" }],
+          "headline-md": ["22px", { "lineHeight": "36px", "fontWeight": "700" }],
+          "headline-xl": ["32px", { "lineHeight": "48px", "fontWeight": "800" }]
+        }
+      }
+    }
+  };
+</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">그림이 피어나다</span><span class="font-label-md text-label-md text-on-surface-variant font-semibold hidden sm:inline-block">Student Home</span></div><div class="flex items-center gap-space-sm"><button aria-label="음성 안내 듣기" class="w-14 h-14 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-sm active:scale-95 transition-transform"><span class="material-symbols-outlined text-[32px]">volume_up</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGiixZdCa32cpQfz3iS0feBK2qmUBGmNxEVrIGdQG6Z2fmp9Co-UbcqV5mJGREGLDs07-8f8QVHgyzgN473It6qSORT_nXRXYKE9Yp0PRHzq4JLHpnMLgIuuZhKlqRqNdq_E4xEqp9EOMQ8XZHGcAqnEzM6lk4OACo8Wss1QSNJUO2HCiuT96u5aZTVfO6WhvRiUZOMAei6eJpESg4Bd9EIjq6IfaOPA_GZpeqwC1DOix7mwlJ8uQ"/></div></div></header><main class="flex flex-col relative w-full pt-20 pb-28 px-margin bg-surface"><div class="flex flex-col w-full gap-space-lg"><!-- Welcome Banner Card -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden border border-outline-variant/30">
+<div class="flex flex-col gap-space-sm relative z-10">
+<div class="flex items-center justify-between gap-space-xs">
+<div class="inline-flex items-center gap-space-xs bg-secondary-fixed px-space-sm py-1 rounded-full text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">오늘도 씩씩하게</span>
+</div>
+<!-- Friendly Voice TTS Button -->
+<button aria-label="반가운 인사 소리로 듣기" class="w-14 h-14 rounded-full bg-secondary-fixed-dim text-on-secondary-fixed flex items-center justify-center shadow-sm active:scale-90 transition-transform" id="welcomeVoiceBtn" type="button">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</button>
+</div>
+<div class="flex flex-col gap-1">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">
+          민우 학생, 반가워요!
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold">
+          오늘은 어떤 즐거운 그림을 그릴까요? 🌸
+        </p>
+</div>
+</div>
+<!-- Decorative Soft Blooms in Card Corner -->
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-secondary-fixed/30 rounded-full blur-xl pointer-events-none"></div>
+<div class="absolute right-4 bottom-2 text-primary-fixed-dim/40 pointer-events-none">
+<span class="material-symbols-outlined text-[80px]">local_florist</span>
+</div>
+</section>
+<!-- 1. 핵심 활동 메뉴 3개 (최상단 우선 배치, 큼직한 1열 세로 카드, 64px 초대형 버튼) -->
+<section class="flex flex-col gap-space-md">
+<!-- 1. [그림 그리기] 카드 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm active:shadow-md transition-all flex flex-col gap-space-sm relative overflow-hidden border border-outline-variant/30">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed-variant px-space-sm py-1 rounded-full font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">palette</span>
+          즐거운 미술 시간
+        </span>
+<span class="w-10 h-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">brush</span>
+</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0 overflow-hidden shadow-inner">
+<img alt="그림 그리기" class="w-full h-full object-cover" data-alt="A cheerful and bright children illustration of a colorful paint palette with happy paintbrushes, warm yellow and green tones, clean pastel colors, welcoming art studio aesthetic for special education students" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClrsoiadJ10dwKRJCXFVNDY2ycynYmb7-v0LRsmn_Vm-ypLLYpIF9CvLn4Mec22FlmplSqPEQNg-Wj9VaIuk9k1-G5IBV_ek5aVeXp3FqqZWMqJupoVqAzCCbB6sMXVVwZeogsWzNtVDWpQydrQKjQVrMEZxRhjhim4LZuki0M1a011tafBMzrERBv1djvZWleYKrEQwmHBxkjY0uL0w1hvhNJvcMhSuYLLK42_Y3dNl5qitcdeSQ"/>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">그림 그리기</h3>
+<p class="font-body-md text-body-md text-on-surface font-medium">신나게 색칠하고 마음껏 그려봐요. 터치해서 바로 시작해요!</p>
+</div>
+</div>
+<a class="min-h-[64px] px-space-lg bg-primary-container text-on-primary rounded-lg flex items-center justify-center gap-space-xs font-label-xl text-label-xl active:scale-95 transition-transform shadow-md" data-path="drawing-studio" href="#">
+<span>시작하기</span>
+<span class="material-symbols-outlined text-[28px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- 2. [굿즈 만들기] 카드 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm active:shadow-md transition-all flex flex-col gap-space-sm relative overflow-hidden border border-outline-variant/30">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 bg-secondary-fixed text-on-secondary-fixed-variant px-space-sm py-1 rounded-full font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+          내 그림이 선물이 돼요!
+        </span>
+<span class="w-10 h-10 rounded-full bg-surface-container-low text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">local_cafe</span>
+</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0 overflow-hidden shadow-inner">
+<img alt="굿즈 만들기" class="w-full h-full object-cover" data-alt="A delightful customized white ceramic mug and a natural canvas eco-bag printed with charming colorful children drawings, soft daylight lighting, warm cozy studio scene" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZAa6Q-Z9n4pzCh01ldgNh4EhkvGqzICHlKOZt9GhZ6dpXK08OtDnTYHx_cmRM3Jg_O6o08yluH6R5rXlz-jMtGsBwfSp6XrOFhqrGlKqtyh4G3WPY391YlaakYt45E8eNy5yuIwYcptvJzdaNN5kWmvwGRdt3An5IloxOnAuUXKtmhqpd-9Ar73wS-jCwdEZvDbynthObptjaiWDdpshCYCgKyX33Fog5-lD8BQCTJjMGBXCw3Bc"/>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">굿즈 만들기</h3>
+<p class="font-body-md text-body-md text-on-surface font-medium">예쁜 머그컵과 에코백을 만들어요. 원하는 굿즈를 골라봐요!</p>
+</div>
+</div>
+<a class="min-h-[64px] px-space-lg bg-secondary text-on-secondary rounded-lg flex items-center justify-center gap-space-xs font-label-xl text-label-xl active:scale-95 transition-transform shadow-md" data-path="goods-maker" href="#">
+<span>만들어보기</span>
+<span class="material-symbols-outlined text-[28px]">shopping_bag</span>
+</a>
+</div>
+</div>
+<!-- 3. [내 작품 갤러리] 카드 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm active:shadow-md transition-all flex flex-col gap-space-sm relative overflow-hidden border border-outline-variant/30">
+<div class="flex items-center justify-between">
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-primary px-space-sm py-1 rounded-full font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+          나만의 보물 상자
+        </span>
+<span class="w-10 h-10 rounded-full bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">collections</span>
+</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-lg bg-surface-container-low flex items-center justify-center shrink-0 overflow-hidden shadow-inner">
+<img alt="내 작품 갤러리" class="w-full h-full object-cover" data-alt="A warm wooden framed artwork display showing happy colorful crayon artwork on ivory art paper, cozy lighting, inspiring gallery atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH9eTY-omSa5y2a_dAvDpbtAyXJWE8XCKdAi0YJAYe95uIMvobLmLPn0lfyFsWQyiZdLr1m0yTZlR9OM3nxhVrvFShnPKD-uJvO4zCLDRK8d0zax7gu0FcVCXdmE86NmwroCH7raaspLrlN3E5H40tTCiG26NiXSCOPjC7X0hdux42mi2aDpUrUZUwv1MgVGkGoKxw9MFeI01IXfUCmNwXJd2Ob2-2d6def2nmhK3VLG-wbdgC8Xc"/>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold">내 작품 갤러리</h3>
+<p class="font-body-md text-body-md text-on-surface font-medium">내가 완성한 소중한 그림들이에요. 언제든 다시 꺼내봐요!</p>
+</div>
+</div>
+<a class="min-h-[64px] px-space-lg bg-surface-container-high text-on-surface rounded-lg flex items-center justify-center gap-space-xs font-label-xl text-label-xl active:scale-95 transition-transform shadow-sm" href="#">
+<span>그림 보기</span>
+<span class="material-symbols-outlined text-[28px]">visibility</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Today's Learning Progress Module (완료 상태 텍스트 & 배지 강화, 고대비 텍스트) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md border border-outline-variant/30">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface font-bold">
+          오늘의 배움 상태
+        </h2>
+<span class="text-xs font-bold text-on-surface-variant bg-surface-container px-2 py-0.5 rounded-full">시연용 예시</span>
+</div>
+<span class="font-label-md text-label-md bg-surface-container-high text-primary px-space-sm py-1 rounded-full font-bold">
+        3 / 5 완료
+      </span>
+</div>
+<!-- Big Cheerful Progress Bar -->
+<div class="flex flex-col gap-2">
+<div class="w-full bg-surface-container-high h-6 rounded-full overflow-hidden p-1 shadow-inner">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700 ease-out flex items-center justify-end pr-2" style="width: 60%;">
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-lowest animate-pulse"></span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-primary font-bold flex items-center gap-1">
+<span>짝짝짝 참 잘했어요! 멋지게 해내고 있어요.</span>
+<span class="material-symbols-outlined text-[20px] text-secondary" style="font-variation-settings: 'FILL' 1;">celebration</span>
+</p>
+</div>
+<!-- Status Samples List (Vertical Stack) -->
+<div class="flex flex-col gap-space-sm pt-1">
+<!-- 1. Completed State (완료 텍스트 명확히 표기: [완료] 꽃 화분 색칠 - 참 잘했어요! 도장 쾅!) -->
+<div class="bg-primary-fixed/40 rounded-lg p-space-sm flex items-center justify-between shadow-sm border border-primary/20">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">done</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="bg-primary text-on-primary text-xs font-bold px-2 py-0.5 rounded-full">완료</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">[완료] 꽃 화분 색칠</span>
+</div>
+<span class="font-body-md text-body-md text-primary font-bold flex items-center gap-1">
+              참 잘했어요! 도장 쾅! ⭐
+            </span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant flex items-center justify-center font-bold text-xs shadow-sm transform -rotate-12 shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+</div>
+</div>
+<!-- 2. Selected State -->
+<div class="bg-secondary-fixed/40 rounded-lg p-space-sm flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm shadow-md border border-secondary-fixed-dim">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">play_arrow</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">모양 채우기</span>
+<span class="bg-secondary text-on-secondary text-xs font-bold px-2 py-0.5 rounded-full">지금 선택됨!</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">재미있는 세모, 네모 색칠하기</span>
+</div>
+</div>
+<button class="h-12 px-space-md rounded-full bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-1 active:scale-95 transition-transform self-end sm:self-center shadow-sm" type="button">
+<span>이어서 하기</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+<!-- 3. Default Waiting State -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between opacity-80">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[26px]">lock</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">선 긋기 놀이</span>
+<span class="font-body-md text-body-md text-on-surface">다음 활동으로 준비 중이에요</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-bold bg-surface-container px-3 py-1 rounded-full">
+          대기 중
+        </span>
+</div>
+</div>
+</section>
+<!-- Interactive TTS Audio Helper Micro-script -->
+<script>
+    (function() {
+      const voiceBtn = document.getElementById('welcomeVoiceBtn');
+      if (!voiceBtn) return;
+
+      voiceBtn.addEventListener('click', function() {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+          const greeting = new SpeechSynthesisUtterance('민우 학생, 반가워요! 오늘은 어떤 즐거운 그림을 그릴까요?');
+          greeting.lang = 'ko-KR';
+          greeting.rate = 0.85;
+          greeting.pitch = 1.1;
+
+          voiceBtn.classList.add('scale-110', 'bg-secondary-fixed');
+          greeting.onend = function() {
+            voiceBtn.classList.remove('scale-110', 'bg-secondary-fixed');
+          };
+          window.speechSynthesis.speak(greeting);
+        }
+      });
+    })();
+  </script></div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)] border-t border-outline-variant/30" data-active-classes="bg-secondary-fixed text-on-secondary-fixed rounded-lg"><div class="flex justify-around items-center h-24 px-space-xs"><a aria-current="page" class="flex-1 flex flex-col items-center justify-center h-20 min-h-[56px] transition-all bg-secondary-fixed text-on-secondary-fixed rounded-lg font-bold" data-path="student-home" href="#"><span class="material-symbols-outlined text-[36px]">cottage</span><span class="font-label-lg text-label-lg mt-1">홈</span></a><a class="flex-1 flex flex-col items-center justify-center h-20 min-h-[56px] text-on-surface-variant transition-all rounded-lg" data-path="drawing-studio" href="#"><span class="material-symbols-outlined text-[36px]">palette</span><span class="font-label-lg text-label-lg mt-1">그림 그리기</span></a><a class="flex-1 flex flex-col items-center justify-center h-20 min-h-[56px] text-on-surface-variant transition-all rounded-lg" data-path="goods-maker" href="#"><span class="material-symbols-outlined text-[36px]">shopping_bag</span><span class="font-label-lg text-label-lg mt-1">굿즈 만들기</span></a></div></nav></body></html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24..48,400..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#fff8f5;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed": "#ffdcc4",
+          "inverse-surface": "#34302c",
+          "on-secondary": "#ffffff",
+          "surface-bright": "#fff8f5",
+          "surface-container": "#f5ece7",
+          "on-error-container": "#93000a",
+          "surface-container-lowest": "#ffffff",
+          "surface-container-low": "#fbf2ed",
+          "secondary-fixed-dim": "#ffb780",
+          "on-surface-variant": "#57423b",
+          "secondary": "#8e4e14",
+          "background": "#fff8f5",
+          "surface-variant": "#e9e1dc",
+          "on-primary-container": "#fffbff",
+          "tertiary-fixed-dim": "#85d6bb",
+          "on-tertiary": "#ffffff",
+          "primary": "#9f3c16",
+          "on-background": "#1e1b18",
+          "primary-container": "#bf542c",
+          "surface-tint": "#a23e18",
+          "on-primary-fixed": "#390c00",
+          "on-tertiary-fixed": "#002118",
+          "outline-variant": "#dec0b7",
+          "inverse-on-surface": "#f8efea",
+          "on-tertiary-fixed-variant": "#00513f",
+          "on-secondary-container": "#783d01",
+          "surface-container-high": "#efe6e2",
+          "primary-fixed-dim": "#ffb59c",
+          "tertiary-container": "#2e826a",
+          "on-surface": "#1e1b18",
+          "surface": "#fff8f5",
+          "surface-dim": "#e1d8d4",
+          "on-tertiary-container": "#f5fff9",
+          "outline": "#8a726a",
+          "on-secondary-fixed": "#2f1400",
+          "on-error": "#ffffff",
+          "tertiary-fixed": "#a1f3d6",
+          "inverse-primary": "#ffb59c",
+          "surface-container-highest": "#e9e1dc",
+          "tertiary": "#056952",
+          "secondary-container": "#ffab69",
+          "primary-fixed": "#ffdbcf",
+          "on-primary": "#ffffff",
+          "on-primary-fixed-variant": "#822801",
+          "error-container": "#ffdad6",
+          "on-secondary-fixed-variant": "#6f3800",
+          "error": "#ba1a1a"
+        },
+        "borderRadius": {
+          "DEFAULT": "1rem",
+          "lg": "2rem",
+          "xl": "3rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "margin": "1.25rem",
+          "space-md": "1.25rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1.25rem",
+          "space-sm": "0.75rem",
+          "gutter": "1rem",
+          "space-xs": "0.375rem",
+          "space-lg": "1.75rem",
+          "space-xl": "2.5rem"
+        },
+        "fontFamily": {
+          "label-sm": ["Plus Jakarta Sans"],
+          "headline-lg": ["Plus Jakarta Sans"],
+          "headline-lg-mobile": ["Plus Jakarta Sans"],
+          "headline-xl": ["Plus Jakarta Sans"],
+          "headline-md": ["Plus Jakarta Sans"],
+          "body-md": ["Plus Jakarta Sans"],
+          "body-lg": ["Plus Jakarta Sans"],
+          "label-md": ["Plus Jakarta Sans"],
+          "body-sm": ["Plus Jakarta Sans"],
+          "headline-sm": ["Plus Jakarta Sans"],
+          "headline-xl-mobile": ["Plus Jakarta Sans"],
+          "label-lg": ["Plus Jakarta Sans"],
+          "label-xl": ["Plus Jakarta Sans"]
+        },
+        "fontSize": {
+          "label-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+          "headline-lg": ["32px", { "lineHeight": "42px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+          "headline-lg-mobile": ["24px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "700" }],
+          "headline-xl": ["40px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+          "headline-md": ["24px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "700" }],
+          "headline-md-mobile": ["20px", { "lineHeight": "32px", "letterSpacing": "0em", "fontWeight": "700" }],
+          "body-md": ["16px", { "lineHeight": "26px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+          "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+          "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.03em", "fontWeight": "700" }],
+          "label-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0.02em", "fontWeight": "700" }],
+          "label-xl": ["20px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "700" }],
+          "body-sm": ["14px", { "lineHeight": "22px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+          "headline-sm": ["20px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+          "headline-xl-mobile": ["30px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "800" }]
+        }
+      }
+    }
+  };
+</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-md text-headline-md text-primary font-bold tracking-tight">그림이 피어나다</span><span class="font-label-md text-label-md text-on-surface-variant font-semibold hidden sm:inline-block">Goods Maker</span></div><div class="flex items-center gap-space-sm"><button aria-label="음성 안내 듣기" class="w-14 h-14 rounded-full bg-secondary-fixed text-primary flex items-center justify-center shadow-sm active:scale-95 transition-transform"><span class="material-symbols-outlined text-[32px]">volume_up</span></button><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGiixZdCa32cpQfz3iS0feBK2qmUBGmNxEVrIGdQG6Z2fmp9Co-UbcqV5mJGREGLDs07-8f8QVHgyzgN473It6qSORT_nXRXYKE9Yp0PRHzq4JLHpnMLgIuuZhKlqRqNdq_E4xEqp9EOMQ8XZHGcAqnEzM6lk4OACo8Wss1QSNJUO2HCiuT96u5aZTVfO6WhvRiUZOMAei6eJpESg4Bd9EIjq6IfaOPA_GZpeqwC1DOix7mwlJ8uQ"/></div></div></header><main class="flex flex-col relative w-full pt-20 pb-28 px-margin bg-surface"><div class="flex flex-col w-full pb-10 space-y-space-lg">
+<!-- Friendly Voice Prompt Header Card -->
+<section class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm relative overflow-hidden border border-outline-variant/30">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 bg-primary-fixed/40 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm relative z-10">
+<div class="space-y-space-xs flex-1">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span>마법 같은 굿즈 공방</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-bold tracking-tight">
+          내 그림이 멋진 물건으로 변신해요! 🎁
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          내가 그린 세상에 하나뿐인 작품을 매일 사용하는 물건에 쏙 넣어보아요.
+        </p>
+</div>
+<!-- TTS Voice Guidance Button -->
+<button aria-label="화면 설명 소리내어 듣기" class="shrink-0 w-16 h-16 rounded-full bg-secondary-fixed hover:bg-secondary-fixed-dim text-primary shadow-md flex flex-col items-center justify-center active:scale-90 transition-transform" id="tts-btn" type="button">
+<span class="material-symbols-outlined text-[30px]" id="tts-icon">volume_up</span>
+<span class="text-[11px] font-bold text-primary -mt-1">소리듣기</span>
+</button>
+</div>
+</section>
+<!-- Step 1: Select Desired Goods -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-9 h-9 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center shadow-sm">1</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface font-bold">만들고 싶은 굿즈 선택하기</h2>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">1개 선택됨</span>
+</div>
+<!-- Goods Option Stack -->
+<div class="space-y-space-sm" id="goods-selector-group">
+<!-- Card A: Warm Mug (Selected) -->
+<div class="goods-card bg-surface-container-lowest rounded-lg p-space-md shadow-md relative overflow-hidden transition-all duration-200 ring-2 ring-primary" data-selected="true">
+<!-- Visual Accent Highlight Ribbon -->
+<div class="absolute top-0 left-0 right-0 h-2 bg-primary"></div>
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<!-- Mug Preview Image Container -->
+<div class="relative w-full sm:w-36 h-36 rounded-lg overflow-hidden shrink-0 shadow-inner bg-surface-container">
+<img alt="민우의 알록달록 꽃이 인쇄된 도자기 머그컵 예시" class="w-full h-full object-cover" data-alt="A warm ivory ceramic coffee mug standing in soft morning daylight with a vibrant, colorful children's crayon flower illustration printed sharply on its side. Studio lighting, friendly tactile aesthetic, warm and joyous atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoL2brwitXu3B66N18QAZbmHHfd6PFSWHO05D6z10V5B7GYG-3qEYU83jstwVkAdnxgxb0gvenFBeOB_yqIvEVyquzcdbTGVtjPOAhDUe7LuJ62V1x5P9zKBg7gZGkKUVJgdlwbmjWY9bdAS0uNPpxg7VSzFvxHfks0JKh_05TmV7oB-tCqieBVnKkpWB49RKGvfSVeuVFqLUIVk7x_jZXdAup_0f-9sITh_8nlIQsB9SlBpb-qQA"/>
+<span class="absolute bottom-2 left-2 px-2.5 py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-sm text-[12px] font-bold text-primary">
+              민우의 작품 예시
+            </span>
+</div>
+<div class="flex-1 w-full flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-headline-md-mobile text-headline-md-mobile font-bold text-primary">따뜻한 머그컵</span>
+<!-- Large Check Badge -->
+<span class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              따뜻한 코코아나 우유를 마실 때마다 내 꽃 그림을 볼 수 있어요!
+            </p>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                내가 고른 굿즈예요 ✨
+              </span>
+<span class="font-label-md text-label-md text-primary font-bold">선택 완료</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card B: Durable Eco-bag (Default State) -->
+<div class="goods-card bg-surface-container-lowest rounded-lg p-space-md shadow-sm border border-outline-variant/30 opacity-85 active:scale-[0.99] transition-all cursor-pointer" data-selected="false">
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="relative w-full sm:w-36 h-28 sm:h-36 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img alt="깨끗한 면 캔버스 에코백 예시" class="w-full h-full object-cover" data-alt="A clean natural canvas tote bag laid flat on a clean wooden desk, with an empty center space for student artwork transfer. Soft neutral lighting, high-contrast, tactile woven cotton fabric." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkQ-UFQ_xkeU5VQLoALk0Wu5e75lxKNgqB8n3L1WDTZNXndu6SopTBgOFidRew-LOBJo8hzxJit8jbQ032SleBWUexsiavUusmpuCM4FehYzY4QJ5xprmmcszwwTKDhoeS0lmekf4zY0MDWAcW2Y01FPOdZyW0j8MIf2wH3DQ62EmSeYC0XIq0H9BATec95jinotiWmqAmix4Wv-1hsu5apusCEzEOdO6kwI3Nr6iCVG3Npsm3eRE"/>
+</div>
+<div class="flex-1 w-full flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface">튼튼한 에코백</span>
+<span class="w-9 h-9 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">add</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              스케치북과 크레파스를 가득 담아 다닐 수 있는 가방이에요.
+            </p>
+<div class="mt-space-sm flex items-center">
+<span class="font-label-md text-label-md text-outline font-medium">터치해서 선택하기</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card C: Pretty T-Shirt (Default State) -->
+<div class="goods-card bg-surface-container-lowest rounded-lg p-space-md shadow-sm border border-outline-variant/30 opacity-85 active:scale-[0.99] transition-all cursor-pointer" data-selected="false">
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="relative w-full sm:w-36 h-28 sm:h-36 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img alt="하얀색 순면 티셔츠 예시" class="w-full h-full object-cover" data-alt="A soft bright white round-neck cotton t-shirt neatly folded on a pale wooden table, ready for colorful custom print transfer. Natural friendly lighting, clear fabric texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKeCbzxSw6_OPhdITHdsYn6QXT2YvS8DWxVbgtgZdJ3P7YHcDySyMZbewtVSN5k0QSA2tifkffVWVytPgnwKJZrd6GGnPNm_F6rZ3-fxwiloJDyejnU1MQdA-g5KuQhEH0fIFueyALoA7DJ5WTkQboSvO9TJd70xwV6MVl3LogzhI5ZH06g2yDwypSi3ShiIiAIjLW2x7n43-Zz_XHYF1k8tc3kB9_mJ-JTJp0nlSBOUjPLl1kZBw"/>
+</div>
+<div class="flex-1 w-full flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface">예쁜 티셔츠</span>
+<span class="w-9 h-9 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">add</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              내 그림을 가슴에 달고 학교에 뽐내며 입고 다닐 수 있어요!
+            </p>
+<div class="mt-space-sm flex items-center">
+<span class="font-label-md text-label-md text-outline font-medium">터치해서 선택하기</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card D: Pretty Flowerpot (Default State) -->
+<div class="goods-card bg-surface-container-lowest rounded-lg p-space-md shadow-sm border border-outline-variant/30 opacity-85 active:scale-[0.99] transition-all cursor-pointer" data-selected="false">
+<div class="flex flex-col sm:flex-row gap-space-md items-start sm:items-center">
+<div class="relative w-full sm:w-36 h-28 sm:h-36 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img alt="아담하고 예쁜 도자기 화분 예시" class="w-full h-full object-cover" data-alt="A clean white ceramic flowerpot or small plant pot with a lovely green succulent on a warm wooden table in a bright classroom or craft room, minimal cozy aesthetic, product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlQEDf8C07T5OJOK_aKOuAIegKSuuKw902iWWs6gJKpX3Naa39KXIjoHSugcyxpz2CTRNtrWPz8F4JXstDL8MAisdh59w78lWk4k4kqLDt4R6lWPlGd535PJ6lHUm8y2LLs--FlCVxW3svLIr0cQ00i0hOY98dDruqm3fgEp5LMr_MWNUMg9uRUVWxzbQ391oVG2TwfDRzkgEfewhgE9J1Pa3tGUvOzyEN19n0yu9cjJW2N0sHC2g"/>
+</div>
+<div class="flex-1 w-full flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface">예쁜 화분</span>
+<span class="w-9 h-9 rounded-full bg-surface-container text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">add</span>
+</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+              내 그림을 둘러 예쁜 식물이 쑥쑥 자라는 화분이에요.
+            </p>
+<div class="mt-space-sm flex items-center">
+<span class="font-label-md text-label-md text-outline font-medium">터치해서 선택하기</span>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<!-- Step 2: Heat Transfer Process Learning Roadmap -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between px-1">
+<div class="flex items-center gap-space-xs">
+<span class="w-9 h-9 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center justify-center shadow-sm">2</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface font-bold">전사하는 방법과 과정</h2>
+</div>
+<span class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant">
+<span>총 4단계</span>
+</span>
+</div>
+<!-- Stepper Roadmap Cards -->
+<div class="space-y-space-sm relative">
+<!-- Stage 1 (Completed) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm relative overflow-hidden border border-outline-variant/30">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary-fixed text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-primary">1단계</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-[12px] font-bold">완료했어요!</span>
+</div>
+<h3 class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface mt-0.5 truncate">그림 인쇄하기</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              특수 종이에 내 그림을 반대로 출력해요 🖨️
+            </p>
+</div>
+</div>
+</div>
+<!-- Stage 2 (Completed) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm relative overflow-hidden border border-outline-variant/30">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-primary-fixed text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-primary">2단계</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant text-[12px] font-bold">완료했어요!</span>
+</div>
+<h3 class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface mt-0.5 truncate">물건에 딱 붙이기</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              머그컵에 내 그림 종이를 튼튼하게 붙여요 🩹
+            </p>
+</div>
+</div>
+</div>
+<!-- Stage 3 (Active / In Progress with Teacher Safety Highlight - Warm Heat Press Theme) -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-md relative overflow-hidden ring-4 ring-secondary-container border border-primary/20">
+<div class="absolute top-0 right-0 bg-primary text-on-primary px-4 py-1 rounded-bl-xl font-label-md text-label-md font-bold flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px] animate-spin">sync</span>
+<span>지금 할 차례예요!</span>
+</div>
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-full bg-secondary-fixed text-primary flex items-center justify-center shrink-0 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[34px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-lg text-label-lg font-bold text-primary">3단계</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant text-[13px] font-bold">진행 중</span>
+</div>
+<h3 class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface mt-0.5">
+                뜨거운 기계로 꾹 누르기 (전사하기)
+              </h3>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm text-on-surface space-y-1 shadow-sm border border-outline-variant/30">
+<p class="font-body-lg text-body-lg text-primary font-bold">
+              "따뜻한 열기계로 꾹 눌러서 그림을 새겨요! 🔥"
+            </p>
+<div class="flex items-center gap-2 bg-secondary-fixed/50 text-secondary px-3 py-1.5 rounded-md font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[22px] text-primary">health_and_safety</span>
+<span>뜨거우니 꼭 선생님과 함께 꾹 눌러주세요!</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Stage 4 (Waiting / Final Reveal) -->
+<div class="bg-surface-container-lowest rounded-lg p-space-md shadow-sm opacity-80 border border-outline-variant/30">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-full bg-surface-container text-outline flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[30px]">hourglass_empty</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md font-bold text-outline">4단계</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline text-[12px] font-medium">기다리는 중</span>
+</div>
+<h3 class="font-headline-md-mobile text-headline-md-mobile font-bold text-on-surface mt-0.5 truncate">식히고 종이 떼기</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+              조심조심 종이를 떼면 예쁜 머그컵 완성! ✨
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Big Reassuring Action Button Area (Warm Terracotta / Coral Amber with High Contrast) -->
+<section class="pt-space-xs sticky bottom-24 z-30">
+<div class="bg-surface-container-lowest/90 backdrop-blur-md p-2 rounded-2xl shadow-lg border border-outline-variant/20">
+<button class="w-full h-[72px] bg-primary hover:bg-primary-container active:scale-[0.98] text-on-primary rounded-xl flex items-center justify-center gap-space-sm shadow-md transition-all font-bold" id="start-transfer-action" type="button">
+<span class="material-symbols-outlined text-[32px] text-on-primary animate-bounce" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<span class="font-label-xl text-label-xl font-bold tracking-tight text-on-primary">선생님과 함께 전사 시작하기 🚀</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  (function() {
+    // Audio Guidance Feedback (Joyful simulation)
+    const ttsBtn = document.getElementById('tts-btn');
+    const ttsIcon = document.getElementById('tts-icon');
+    let isSpeaking = false;
+
+    if (ttsBtn) {
+      ttsBtn.addEventListener('click', function() {
+        if ('speechSynthesis' in window) {
+          if (isSpeaking) {
+            window.speechSynthesis.cancel();
+            isSpeaking = false;
+            ttsBtn.classList.remove('ring-4', 'ring-secondary-container');
+            ttsIcon.textContent = 'volume_up';
+          } else {
+            const speechText = "내 그림이 멋진 물건으로 변신해요! 지금은 따뜻한 머그컵이 선택되어 있어요. 3단계 뜨거운 기계로 꾹 누르기를 선생님과 함께 시작해 보세요!";
+            const utterance = new SpeechSynthesisUtterance(speechText);
+            utterance.lang = 'ko-KR';
+            utterance.rate = 0.9;
+            utterance.onend = function() {
+              isSpeaking = false;
+              ttsBtn.classList.remove('ring-4', 'ring-secondary-container');
+              ttsIcon.textContent = 'volume_up';
+            };
+            window.speechSynthesis.speak(utterance);
+            isSpeaking = true;
+            ttsBtn.classList.add('ring-4', 'ring-secondary-container');
+            ttsIcon.textContent = 'graphic_eq';
+          }
+        }
+      });
+    }
+
+    // Action Button Delight Confirmation
+    const startBtn = document.getElementById('start-transfer-action');
+    if (startBtn) {
+      startBtn.addEventListener('click', function() {
+        startBtn.classList.add('scale-95');
+        setTimeout(() => startBtn.classList.remove('scale-95'), 150);
+        if ('speechSynthesis' in window) {
+          const startUtterance = new SpeechSynthesisUtterance("선생님을 불렀어요! 안전장갑을 끼고 함께 전사를 시작해요.");
+          startUtterance.lang = 'ko-KR';
+          window.speechSynthesis.speak(startUtterance);
+        }
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)] border-t border-outline-variant/20" data-active-classes="bg-secondary-fixed text-primary rounded-lg"><div class="flex justify-around items-center h-24 px-space-xs"><a class="flex-1 flex flex-col items-center justify-center h-20 min-h-[56px] text-on-surface-variant hover:text-primary transition-all rounded-lg" data-path="student-home" href="#"><span class="material-symbols-outlined text-[36px]">cottage</span><span class="font-label-lg text-label-lg mt-1 font-bold">홈</span></a><a class="flex-1 flex flex-col items-center justify-center h-20 min-h-[56px] text-on-surface-variant hover:text-primary transition-all rounded-lg" data-path="drawing-studio" href="#"><span class="material-symbols-outlined text-[36px]">palette</span><span class="font-label-lg text-label-lg mt-1 font-bold">그림 그리기</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center h-20 min-h-[56px] transition-all bg-secondary-fixed text-primary rounded-lg shadow-sm font-bold" data-path="goods-maker" href="#"><span class="material-symbols-outlined text-[36px]" style="font-variation-settings: 'FILL' 1;">shopping_bag</span><span class="font-label-lg text-label-lg mt-1 font-bold">굿즈 만들기</span></a></div></nav>
+</body></html>
